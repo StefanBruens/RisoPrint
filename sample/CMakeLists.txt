@@ -7,3 +7,5 @@ target_link_libraries (risoparser risoprint)
 
 add_executable (risoencode risoencode.cc)
 target_link_libraries (risoencode risoprint)
+
+install (TARGETS risoparser risoencode DESTINATION bin)
